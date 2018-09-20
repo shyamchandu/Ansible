@@ -1,8 +1,8 @@
 ---
-hosts: all
-become: yes
-tasks:
-- name: "Install/Uninstall tree"
-  apt:
-   name: tree
-   state: absent
+- hosts: all
+  become: yes
+  tasks:
+  - name: "Install/Uninstall tree"
+    apt:
+     name: tree
+     state: absent
