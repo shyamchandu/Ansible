@@ -1,6 +1,6 @@
 ---
 - hosts: all
-  gather_facts: no
+  gather_facts: yes
   become: yes
   tasks:
   - name: "Install/Uninstall tree"
@@ -9,7 +9,7 @@
      state: present
 
 - hosts: localGrp
-  gather_facts: no
+  gather_facts: yes
   become: yes
   tasks:
   - name: "Remove Tree"
@@ -18,7 +18,7 @@
       state: absent
 
 - hosts: ExGrp
-  gather_facts: no
+  gather_facts: yes
   become: yes
   tasks:
   - name: "Install git"
