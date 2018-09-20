@@ -5,4 +5,4 @@
   - name: "Install/Uninstall tree"
     apt:
      name: tree
-     state: absent
+     state: present
