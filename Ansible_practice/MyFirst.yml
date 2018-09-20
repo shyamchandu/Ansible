@@ -9,6 +9,7 @@
      state: present
 
 - hosts: localGrp
+  gather_facts: no
   become: yes
   tasks:
   - name: "Remove Tree"
@@ -17,6 +18,7 @@
       state: absent
 
 - hosts: ExGrp
+  gather_facts: no
   become: yes
   tasks:
   - name: "Install git"
