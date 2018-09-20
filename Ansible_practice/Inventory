@@ -1,0 +1,6 @@
+[localGrp]
+ip-172-31-46-31.us-east-2.compute.internal
+
+[ExGrp]
+ip-172-31-44-15.us-east-2.compute.internal
+ip-172-31-40-142.us-east-2.compute.internal
