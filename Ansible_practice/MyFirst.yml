@@ -6,3 +6,19 @@
     apt:
      name: tree
      state: present
+
+- hosts: localGrp
+  become: yes
+  tasks:
+  - name: "Remove Tree"
+    apt:
+      name: tree
+      state: absent
+
+- hosts: ExGrp
+  become: yes
+  tasks:
+  - name: "Install git"
+    apt:
+      name: git
+      state: present
